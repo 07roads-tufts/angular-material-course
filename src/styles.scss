@@ -1,0 +1,105 @@
+
+@use '@angular/material' as mat;
+/* You can add global styles to this file, and also import other style files */
+
+@import "./_mixins.scss";
+
+@include responsive-dialogs();
+
+
+//@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+@include mat.core() ;
+
+$dark-primary-text : rgba(black, 0.87);
+$light-primary-text: white;
+
+$mat-primary: (
+        50: #f0f7fc,
+        100: #d9ecf9,
+        200: #bfe0f5,
+        300: #a5d3f0,
+        400: #92c9ed,
+        500: #7fc0ea,  // main color
+        600: #77bae7,
+        700: #6cb2e4,
+        800: #4f9cdb,
+        900: #4f9cdb,
+        A100: #ffffff,
+        A200: #ffffff,
+        A400: #d2eaff,
+        A700: #b8deff,
+        contrast: (
+                50: $dark-primary-text,
+                100: $dark-primary-text,
+                200: $dark-primary-text,
+                300: $light-primary-text,
+                400: $light-primary-text,
+                500: $light-primary-text,
+                600: $light-primary-text,
+                700: $light-primary-text,
+                800: $light-primary-text,
+                900: $light-primary-text,
+                A100: $dark-primary-text,
+                A200: $light-primary-text,
+                A400: $light-primary-text,
+                A700: $light-primary-text,
+        )
+);
+
+$mat-accent: (
+        50: #fce4ec,
+        100: #f8bbd0,
+        200: #f48fb1,
+        300: #f06292,
+        400: #ec407a,
+        500: #e91e63,
+        600: #d81b60,
+        700: #c2185b,
+        800: #ad1457,
+        900: #880e4f,
+        A100: #ff80ab,
+        A200: #ff4081,
+        A400: #f50057,
+        A700: #c51162,
+        contrast: (
+                50: $dark-primary-text,
+                100: $dark-primary-text,
+                200: $dark-primary-text,
+                300: $dark-primary-text,
+                400: $dark-primary-text,
+                500: $light-primary-text,
+                600: $light-primary-text,
+                700: $light-primary-text,
+                800: $light-primary-text,
+                900: $light-primary-text,
+                A100: $dark-primary-text,
+                A200: $light-primary-text,
+                A400: $light-primary-text,
+                A700: $light-primary-text,
+        )
+);
+
+
+
+$primary-palette: mat.define-palette($mat-primary);
+$accent-palette: mat.define-palette($mat-accent);
+
+$theme: mat.define-light-theme($primary-palette, $accent-palette);
+
+//@include mat.button-theme($theme);
+@include mat.all-component-themes($theme);
+
+
+.highlight-date {
+  background: red !important;
+}
+
+button.example-custom-date-class {
+  background: orange;
+  border-radius: 100%;
+}
+
+
+

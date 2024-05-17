@@ -1,0 +1,109 @@
+
+.course {
+    text-align: center;
+    width: 390px;
+    margin: 40px auto;
+}
+
+.course-thumbnail {
+  width: 150px;
+  margin: 20px auto 0 auto;
+  display: block;
+}
+
+.description-cell {
+  text-align: left;
+  margin: 10px auto;
+}
+
+.duration-cell {
+  text-align: center;
+}
+
+.duration-cell mat-icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.spinner-container {
+  height: 360px;
+  width: 390px;
+  position: fixed;
+}
+
+.lessons-table {
+  min-height: 360px;
+  margin-top: 10px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  tr:hover {
+    background: whitesmoke;
+    cursor: pointer;
+  }
+}
+//
+//body > app-root > mat-sidenav-container > mat-sidenav-content > course > div > mat-paginator > div > div {
+//
+//  //display: block;
+//  //flex-wrap: unset !important;
+//  color: red;
+//  background-color: purple !important;
+//}
+
+mat-paginator {
+  width: 400px;
+  padding-bottom: 10px;
+  margin-bottom: 100px;
+
+  //& div { background-color: red }
+  //& > div {
+  //  flex-wrap: unset !important;
+  //  color: red;
+  //  background-color: purple !important;
+  //}
+
+
+
+}
+//:host.mat-mdc-paginator-container {
+//  background-color: red;
+//}
+
+
+.collapsed-detail {
+  display: none;
+}
+
+
+.scrolling-container {
+  max-height: 250px;
+  max-width:250px;
+overflow: auto;
+}
+
+
+.spinner-container mat-spinner {
+  margin: 130px auto 0 auto;
+}
+
+.mat-column-seqNo {
+  width: 32px;
+  border-right: 1px solid black;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.mat-column-description {
+  padding-left:20px;
+  text-align: left;
+}
+
+.mat-column-duration {
+  font-style: italic;
+}
+
+table.mat-mdc-table {
+  min-width: unset;
+}
